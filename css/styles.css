@@ -134,7 +134,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -147,6 +148,19 @@ body {
 .contact-nav .link:hover,
 .contact-nav .link:focus {
   color: var(--accent-text-color);
+}
+
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.phone-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* section */
@@ -222,11 +236,6 @@ body {
   margin: -1px;
 }
 
-.container-quality {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .list-title {
   display: flex;
   padding: 0;
@@ -248,6 +257,26 @@ body {
 
 .list-title .item-quality + .item-quality {
   margin-left: 30px;
+}
+
+/*.list-title .item-quality {
+  flex: 0 0 calc((100%-90px) / 4);
+}*/
+
+.logo-quality {
+  background: var(--secondary-background-color);
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
 }
 
 /*Заголовки h2*/
@@ -319,7 +348,7 @@ body {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .cards {
@@ -328,6 +357,49 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
+.social-wrapper {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+
+.social-wrapper .social-list + .social-list {
+  margin-left: 10px;
+}
+
+.icon-team {
+  padding: 12px;
+  fill: #afb1b8;
+}
+
+.social-links {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+
+  display: flex;
+  justify-content: center;
+}
+
+.social-links:hover,
+.social-links:focus {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background: var(--accent-text-color);
+}
+
+.social-links:hover svg,
+.social-links:focus svg {
+  fill: var(--primary-background-color);
+}
+
+.our-team {
+  padding: 30px 32px;
+}
+
 
 /*Контакти*/
 .contact {
